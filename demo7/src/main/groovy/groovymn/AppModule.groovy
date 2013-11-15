@@ -3,7 +3,6 @@ package groovymn
 import com.google.inject.AbstractModule
 import com.mongodb.BasicDBObject
 import com.mongodb.DB
-import com.mongodb.DBObject
 import com.mongodb.MongoClient
 
 /**

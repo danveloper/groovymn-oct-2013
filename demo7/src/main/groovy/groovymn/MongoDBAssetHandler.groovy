@@ -2,9 +2,9 @@ package groovymn
 
 import com.mongodb.BasicDBObject
 import com.mongodb.DB
-import org.ratpackframework.file.MimeTypes
-import org.ratpackframework.handling.Context
-import org.ratpackframework.handling.Handler
+import ratpack.file.MimeTypes
+import ratpack.handling.Context
+import ratpack.handling.Handler
 
 import javax.inject.Inject
 /**

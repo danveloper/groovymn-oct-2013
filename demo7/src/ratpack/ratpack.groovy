@@ -1,9 +1,11 @@
+
+
 import groovymn.AppModule
 import groovymn.MongoDBAssetHandler
 
-import static org.ratpackframework.groovy.RatpackScript.ratpack
+import static ratpack.groovy.Groovy.ratpack as _
 
-ratpack {
+_ {
   modules {
     register new AppModule()
   }
@@ -17,7 +19,3 @@ ratpack {
   }
 
 }
-
-
-
-

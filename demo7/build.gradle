@@ -1,22 +1,30 @@
-apply plugin: "ratpack-groovy"
 apply plugin: "idea"
 
 buildscript {
   repositories {
-    maven { url "http://oss.jfrog.org/repo" }
+    maven { url "http://oss.jfrog.org/artifactory/libs-snapshot" }
     mavenCentral()
   }
   dependencies {
-    classpath 'org.ratpack-framework:ratpack-gradle:0.9.0-SNAPSHOT'
+    classpath 'io.ratpack:ratpack-gradle:0.9.0-SNAPSHOT'
   }
 }
 
 repositories {
+  maven { url "http://oss.jfrog.org/artifactory/libs-snapshot" }
   maven { url "http://oss.jfrog.org/repo" }
   mavenCentral()
   maven { url "http://repo.springsource.org/repo" } // for springloaded
 }
 
+apply plugin: "ratpack-groovy"
+
+idea {
+    project {
+        jdkName "1.7"
+        languageLevel "1.7"
+    }
+}
 
 configurations.all {
   resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
